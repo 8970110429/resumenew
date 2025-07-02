@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume - John Doe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2, h3 {
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      font-size: 32px;
+      border-bottom: 2px solid #00aaff;
+      padding-bottom: 10px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      color: #00aaff;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .job-title {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .job-duration {
+      float: right;
+      color: #999;
+    }
+
+    .contact-info {
+      margin-top: -15px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #e0f3ff;
+      color: #0077aa;
+      padding: 5px 10px;
+      border-radius: 4px;
+      margin: 3px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .job-duration {
+        float: none;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>John Doe</h1>
+    <div class="contact-info">
+      📧 john.doe@example.com | 📞 (123) 456-7890 | 🌐 www.johndoe.com
+    </div>
+
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <p>Highly motivated software engineer with 5+ years of experience in full-stack development. Skilled in building scalable web applications and working with cross-functional teams.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Work Experience</div>
+
+      <p><span class="job-title">Senior Web Developer</span>
+         <span class="job-duration">2021 – Present</span><br>
+         ABC Tech Solutions, New York, NY
+      </p>
+      <ul>
+        <li>Developed and maintained responsive web apps using React, Node.js, and MongoDB.</li>
+        <li>Led a team of 4 developers in agile sprints, improving delivery time by 25%.</li>
+      </ul>
+
+      <p><span class="job-title">Frontend Developer</span>
+         <span class="job-duration">2018 – 2021</span><br>
+         Creative Web Studio, Boston, MA
+      </p>
+      <ul>
+        <li>Designed modern UI components using HTML5, CSS3, and JavaScript.</li>
+        <li>Worked closely with designers and backend developers to enhance UX.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+      <p><strong>Bachelor of Science in Computer Science</strong><br>
+         University of XYZ, 2014 – 2018
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Skills</div>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+        <span>Git</span>
+        <span>Agile</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
