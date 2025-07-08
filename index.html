@@ -2,146 +2,232 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alankar Patil | Technical Writer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alankar Patil - Technical Writer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-family: 'Poppins', sans-serif;
     }
 
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 40px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    body {
+      display: flex;
+      background: linear-gradient(to right, #141e30, #243b55);
+      min-height: 100vh;
+      padding: 2rem;
+      color: #fff;
     }
 
-    h1, h2 {
-      color: #2c3e50;
+    .sidebar {
+      width: 240px;
+      margin-right: 2rem;
+      background: #1e2a38;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
     }
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 5px;
-    }
-
-    h2 {
-      font-size: 20px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
-      margin-top: 30px;
-    }
-
-    .contact {
-      font-size: 14px;
-      color: #555;
-    }
-
-    .section p, ul {
-      margin: 10px 0;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .skills span {
-      display: inline-block;
-      background: #3498db;
-      color: white;
-      padding: 4px 10px;
-      margin: 4px;
-      border-radius: 4px;
-      font-size: 13px;
-    }
-
-    .footer {
+    .profile-section {
       text-align: center;
-      font-size: 13px;
-      color: #888;
-      margin-top: 40px;
+      margin-bottom: 2rem;
+    }
+
+    .profile-section img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 2px solid #fff;
+    }
+
+    .social-icons a {
+      color: #ccc;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #f39c12;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    .sidebar li {
+      margin-bottom: 1rem;
+      cursor: pointer;
+      color: #ccc;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      padding: 0.5rem;
+      border-radius: 8px;
+    }
+
+    .sidebar li:hover {
+      background-color: #34495e;
+      color: #f1c40f;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+      background: #fefefe;
+      color: #333;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      transition: 0.3s;
+    }
+
+    .section:hover {
+      transform: translateY(-6px);
+    }
+
+    .section h2 {
+      font-size: 1.6rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 6px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #2980b9;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 6px 10px 10px 0;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+    .badge:hover {
+      background: #1abc9c;
+    }
+
+    .project h4 {
+      color: #2c3e50;
+      margin-top: 1rem;
+    }
+
+    .project p {
+      margin-top: 0.3rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Alankar Patil</h1>
-    <div class="contact">
-      <p>Email: alankar.patil@example.com | LinkedIn: linkedin.com/in/alankarp | GitHub: github.com/alankarp</p>
+  <div class="sidebar">
+    <div class="profile-section">
+      <img src="alankar.jpeg" alt="Alankar Patil">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/alankarpatil" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
+    <ul>
+      <li data-target="about">About Me</li>
+      <li data-target="experience">Experience</li>
+      <li data-target="skills">Skills</li>
+      <li data-target="projects">Projects</li>
+      <li data-target="certifications">Certifications</li>
+      <li data-target="personal">Personal Info</li>
+    </ul>
+  </div>
 
-    <div class="section">
-      <h2>Professional Summary</h2>
-      <p>
-        Detail-oriented and technically skilled Software Technical Writer with 4 years of experience in creating clear, concise, and user-focused documentation for APIs, developer tools, and complex software systems. Adept at collaborating with engineering and product teams to deliver high-quality content.
-      </p>
+  <div class="content">
+    <div class="section" id="about">
+      <h2>About Me</h2>
+      <p>As a software technical writer, understanding and utilizing data is crucial. Data helps inform documentation strategies, improve user experience, and measure content effectiveness. By analyzing usage patterns, user feedback, and product metrics, technical writers can create more targeted, relevant, and efficient documentation that meets user needs and supports business goals.</p>
     </div>
-
-    <div class="section">
-      <h2>Work Experience</h2>
-      <p><strong>Technical Writer</strong> – [Your Most Recent Company] <br />
-      <em>June 2021 – Present</em></p>
+    <div class="section" id="experience">
+      <h2>Experience</h2>
+      <p><strong>TLE Technologies Pvt. Ltd., Bangalore</strong><br>
+        <em>Engineer – Technical Writer (2021 – Present)</em></p>
       <ul>
-        <li>Created and maintained API documentation for RESTful services used by over 1 million developers.</li>
-        <li>Developed end-user guides, installation manuals, and onboarding tutorials for enterprise SaaS products.</li>
-        <li>Worked with SMEs, engineers, and QA teams to gather information and validate documentation accuracy.</li>
-      </ul>
-
-      <p><strong>Junior Technical Writer</strong> – [Previous Company Name] <br />
-      <em>July 2019 – May 2021</em></p>
-      <ul>
-        <li>Authored internal wikis and support documentation using Markdown and Confluence.</li>
-        <li>Helped migrate product documentation to an open-source platform (MkDocs/ReadTheDocs).</li>
+        <li>Created and maintained user guides, API docs, installation manuals, and release notes.</li>
+        <li>Collaborated with developers, QA, and product teams in Agile/Scrum environments.</li>
+        <li>Worked with Markdown, HTML, Oxygen XML, DITA, and Confluence.</li>
+        <li>Wrote and updated REST API documentation using Swagger/OpenAPI and Postman.</li>
+        <li>Created interactive help content using tools like MadCap Flare.</li>
+        <li>Performed regular content audits for accuracy and consistency.</li>
+        <li>Designed SOPs, system admin manuals, and how-to guides for end-users.</li>
+        <li>Created diagrams, UI walkthroughs, and visual aids with Lucidchart and Figma.</li>
+        <li>Managed documentation in GitHub with version control best practices.</li>
+        <li>Contributed to localization and accessibility improvements (WCAG compliance).</li>
       </ul>
     </div>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p><strong>Bachelor of Engineering in Aeronautical Engineering</strong><br />
-      [Your University Name] – Graduated [Year]</p>
-    </div>
-
-    <div class="section">
-      <h2>Skills & Tools</h2>
-      <div class="skills">
-        <span>Technical Writing</span>
-        <span>API Documentation</span>
-        <span>Markdown</span>
-        <span>Git & GitHub</span>
-        <span>Confluence</span>
-        <span>Swagger / OpenAPI</span>
-        <span>HTML/CSS</span>
-        <span>Postman</span>
-        <span>ReadTheDocs</span>
-        <span>Linux/CLI</span>
-        <span>Docusaurus</span>
+    <div class="section" id="skills">
+      <h2>Skills</h2>
+      <div>
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS</span>
+        <span class="badge">Oxygen XML</span>
+        <span class="badge">DITA</span>
+        <span class="badge">Markdown</span>
+        <span class="badge">MadCap Flare</span>
+        <span class="badge">Git/GitHub</span>
+        <span class="badge">Swagger/Postman</span>
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li><strong>API Docs for WeatherApp</strong> – Created OpenAPI specs and full usage documentation for a public weather API.</li>
-        <li><strong>GitHub Docs Overhaul</strong> – Rewrote and restructured documentation for an open-source automation library.</li>
-      </ul>
+      <div class="project">
+        <h4>Interactive API Documentation Portal</h4>
+        <p>Developed a user-friendly documentation portal using Docusaurus and Swagger UI for internal APIs.</p>
+      </div>
+      <div class="project">
+        <h4>User Manual for Aerospace Component Tracker</h4>
+        <p>Created detailed manuals and how-to guides for an in-house aerospace part tracking system.</p>
+      </div>
+      <div class="project">
+        <h4>HTML/CSS Knowledge Base</h4>
+        <p>Built a static knowledge base site using HTML, CSS, and GitHub Pages.</p>
+      </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="certifications">
       <h2>Certifications</h2>
-      <ul>
-        <li>Technical Writing for Software Documentation – Coursera</li>
-        <li>API Technical Writing – Udemy</li>
-      </ul>
+      <p>Certified Technical Writer – Henry Harvin</p>
     </div>
 
-    <div class="footer">
-      &copy; 2025 Alankar Patil. All rights reserved.
+    <div class="section" id="personal">
+      <h2>Personal Info</h2>
+      <p><strong>Email:</strong> patilalankar38@gmail.com</p>
+      <p><strong>Phone:</strong> +91 8970110429</p>
+      <p><strong>Date of Birth:</strong> 02-Aug-1997</p>
+      <p><strong>City:</strong> Bangalore, India</p>
+      <p><strong>Degree:</strong> Bachelor (Aeronautical Engineering)</p>
     </div>
   </div>
+
+  <script>
+    const navItems = document.querySelectorAll('.sidebar li');
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const targetId = item.getAttribute('data-target');
+        const target = document.getElementById(targetId);
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 40,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
-
